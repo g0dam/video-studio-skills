@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "slug": "zombie-scavenger-atomic-wasteland",
+  "title": "Zombie Scavenger Atomic Wasteland",
+  "source_type": "single-video",
+  "source_refs": [
+    {
+      "id": "S01",
+      "url": "https://www.bilibili.com/video/BV1FFRQB2Eqw/",
+      "kind": "public-video-page-direct-sampled"
+    },
+    {
+      "id": "S02",
+      "url": "https://www.douyin.com/video/7637813720252435755",
+      "kind": "public-video-page"
+    },
+    {
+      "id": "S03",
+      "url": "https://k.sina.com.cn/article_7879776328_1d5abd84806801lihc.html?from=tech",
+      "kind": "public-summary"
+    },
+    {
+      "id": "S04",
+      "url": "https://finance.sina.com.cn/jjxw/2026-05-23/doc-inhyvxrq7802651.shtml",
+      "kind": "news-analysis"
+    },
+    {
+      "id": "S05",
+      "url": "https://k.sina.com.cn/article_1699258907_m6548a21b03301rfjo.html",
+      "kind": "creator-interview"
+    },
+    {
+      "id": "S06",
+      "url": "https://www.reddit.com/r/aivideo/comments/1t8rq6m/aigc_short_film_zombie_scavenger_credit_mxshell/",
+      "kind": "community-reaction"
+    }
+  ],
+  "created_at": "2026-05-23T09:55:24+00:00",
+  "updated_at": "2026-05-23T10:18:37+00:00",
+  "aspect_ratios": [
+    "2.33:1",
+    "21:9",
+    "9:16-safe-crop"
+  ],
+  "duration_range_sec": {
+    "min": 180,
+    "max": 240
+  },
+  "confidence": "medium",
+  "style_vectors": {
+    "narrative": [
+      "job-first genre hook: a robot scavenger enters a readable cleanup mission before romance takes over",
+      "compressed worldbuilding through repeated icons: seaside resort, dead town, robot cowboy, ostrich mount, mannequin, orbital escape",
+      "black-humor turn from zombie combat into lonely mannequin romance and sentimental ritual"
+    ],
+    "camera": [
+      "ultra-wide cinematic frames with ocean glare, luxury architecture, and dead-street scale",
+      "hero low angles, centered silhouettes, diagonal action staging, and prop-to-location reveals",
+      "smooth generated camera paths: slow push, lateral tracking, action follow, aerial-feeling opens"
+    ],
+    "editing": [
+      "under-four-minute story economy with roughly 90 high-contrast scene-change candidates in a 213.5 second sample",
+      "action bursts alternate with deadpan LED-face pauses and romantic absurdity",
+      "cuts motivated by task progress, location reveal, title-card emphasis, or comic reversal"
+    ],
+    "color_light": [
+      "atom-punk retro-futurism with cyan ocean glare, sun-bleached orange, rust metal, and red title typography",
+      "dust, chrome, cracked concrete, tropical resort glass, zombie residue, and weathered plastics",
+      "practical LED face color as character emotion and technical workaround"
+    ],
+    "sound": [
+      "sound-on genre impact is implied by AAC audio track and combat choreography",
+      "music and effects should support gunfire, mechanical motion, surf/wind, crowd threat, and romantic lift",
+      "no subtitle track found in Bilibili metadata; visual storytelling should remain legible without dialogue"
+    ],
+    "performance": [
+      "robot face uses LED/pixel expression instead of fragile AI human micro-expression",
+      "mechanical body comedy, cowboy swagger, and lonely restrained tenderness",
+      "animal/vehicle micro-gags give the world memory and charm"
+    ],
+    "platform": [
+      "strong one-sentence share hook: robot cowboy on an ostrich clears zombies and falls for a mannequin",
+      "Bilibili, Douyin, Reddit, and X-friendly genre readability despite ultra-wide framing",
+      "comment culture frames it as movie-like AI rather than a tool demo"
+    ]
+  },
+  "legal_notes": {
+    "public_sources_only": true,
+    "no_identity_clone": true,
+    "no_shot_for_shot_copy": true
+  },
+  "usage_constraints": [
+    "Use as a transferable taste grammar, not a shot-for-shot remake of Zombie Scavenger.",
+    "Do not copy the robot cowboy, ostrich mount, mannequin romance, exact ending, or creator identity as a package.",
+    "Avoid using living creator name or platform account as a style prompt.",
+    "For new work, change the job, companion object, vehicle/animal logic, setting geography, and emotional payoff."
+  ]
+}

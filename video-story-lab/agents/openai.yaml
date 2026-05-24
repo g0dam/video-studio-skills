@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Story Lab"
+  short_description: "Plan hook-driven scripts, scene arcs, and post-audio notes"
+  default_prompt: "Use $video-story-lab to turn this taste profile or brief into a timed short-video concept, script, scene plan, downstream update list, and audio/post-production plan."

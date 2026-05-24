@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Release QA"
+  short_description: "Check continuity, ratios, audio policy, and release package"
+  default_prompt: "Use $video-release-qa to review this video project for story clarity, continuity, aspect-ratio consistency, stale storyboard images, provider prompt issues, audio/post-production policy, cover/key art, captions, and final release package."

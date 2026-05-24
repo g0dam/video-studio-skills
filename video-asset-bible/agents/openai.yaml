@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Asset Bible"
+  short_description: "Define reusable assets, continuity, ratios, and references"
+  default_prompt: "Use $video-asset-bible to create a visual continuity bible, preserve approved assets, inherit the project ratio, and plan reference images for this video project."
