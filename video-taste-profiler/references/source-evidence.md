@@ -53,9 +53,19 @@ Use `source-log.md`:
 
 ## Observations
 
+### Dimension Evidence Matrix
+
+| Dimension | Observed Evidence | Inferred Pattern | Reusable Rule Candidate | Copy-Risk Redline | Confidence |
+| --- | --- | --- | --- | --- | --- |
+| Narrative and structure | <source fact IDs> | <abstract mechanism> | <general rule for new work> | <what must not transfer> | <high/medium/low> |
+
 ### Repeated Patterns
 
 - <pattern> [S01, S03, S05]
+
+### Source Inventory Kept Out of Taste
+
+- <characters, props, locations, dialogue, logos, shot sequence, or ending images that should stay evidence-only>
 
 ### Exceptions
 

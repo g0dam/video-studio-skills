@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "slug": "cozy-pet-animated-emotion-comedy",
+  "title": "Life-Observation Companion Comedy",
+  "source_type": "mixed",
+  "source_refs": [
+    {
+      "id": "S01",
+      "type": "local-video",
+      "path": "/Users/g0dam/Downloads/video_一个人一晚上只用ai，也能制作迪..._0_0.mp4",
+      "description": "User-provided 39.4 second 16:9 CG animated reference sample. Used only to extract abstract craft patterns: real-life behavior, hidden companion logic, expressive acting, and warm re-reading. Do not reuse its plot, characters, props, dialogue, or shot sequence."
+    },
+    {
+      "id": "S01-FRAMES",
+      "type": "local-analysis-frame-sheet",
+      "path": "_archive/analysis-frames/ai-disneyish-animal-fairytale/contact-sheet-timestamped.jpg",
+      "description": "One-frame-per-second contact sheet generated from S01 for visual evidence and timing notes."
+    },
+    {
+      "id": "S02",
+      "type": "local-video",
+      "path": "/Users/g0dam/Downloads/video_一个人一晚上只用ai，也能制作迪..._0_0 (1).mp4",
+      "description": "User-provided 52.87 second 16:9 CG animated reference sample. Used only to extract abstract craft patterns: object-triggered meaning shift, life-observation comedy, appealing animation acting, and emotional return. Do not reuse its plot, characters, props, dialogue, or shot sequence."
+    },
+    {
+      "id": "S02-FRAMES",
+      "type": "local-analysis-frame-sheet",
+      "path": "_archive/analysis-frames/ai-disneyish-animal-fairytale-variant/contact-sheet-timestamped.jpg",
+      "description": "One-frame-per-second contact sheet generated from S02 for visual evidence and timing notes."
+    },
+    {
+      "id": "R01",
+      "type": "internal-taste-reference",
+      "path": "video-studio-skills/taste/family-musical-fairytale-adventure",
+      "description": "Non-infringing family animation craft reference for appeal, clear staging, emotional color keys, tactile interiors, and sincere performance."
+    }
+  ],
+  "created_at": "2026-05-24T05:41:42+00:00",
+  "updated_at": "2026-05-24T06:20:30+00:00",
+  "aspect_ratios": [
+    "16:9",
+    "9:16"
+  ],
+  "duration_range_sec": {
+    "min": 15,
+    "max": 60
+  },
+  "confidence": "medium",
+  "style_vectors": {
+    "narrative": [
+      "real-life household behavior reframed as hidden emotional logic",
+      "ordinary companion behavior becomes a warm point-of-view reveal",
+      "human or environment misread creates the comic gap",
+      "small daily friction becomes tenderness through re-interpretation",
+      "role reversal where a tiny domestic action receives feature-film seriousness",
+      "optional imagined insert externalizes emotion without copying reference scenes",
+      "family-safe payoff restores connection rather than escalating spectacle"
+    ],
+    "camera": [
+      "behavior-plus-question hook",
+      "companion-level POV",
+      "expressive face close-up for emotional beats",
+      "tactile detail insert for the current story's original focus",
+      "wide room geography before and after the emotional turn",
+      "reaction close-ups pairing companion and human or environment",
+      "contained imagined reveal when attention or touch opens inner meaning"
+    ],
+    "editing": [
+      "fast readable hook followed by a short domestic setup",
+      "attention-driven cause and effect",
+      "reaction cut between companion, human or environment, and focus detail",
+      "scene transitions motivated by object, eye-line, touch, or emotional realization",
+      "imagined insert bracketed by the real situation when used",
+      "match cut from ordinary household detail into emotional inner meaning",
+      "quiet pause before the audience understands the second meaning",
+      "held changed reaction or compact post-produced end card"
+    ],
+    "color_light": [
+      "warm practical interior light against cool evening shadows",
+      "eye catchlights as emotional focus",
+      "soft rim light on fur or feathers",
+      "tactile household materials without importing reference props",
+      "brief color or glow expansion only when story-motivated",
+      "cozy low-saturation base with clear accent colors"
+    ],
+    "sound": [
+      "sparse dialogue or subtitle beats",
+      "soft room tone",
+      "small household foley for movement, contact, fabric, surfaces, and room mechanics",
+      "short silence before the emotional re-read",
+      "gentle family-comedy music cue",
+      "small chime or swell only for motivated meaning shifts"
+    ],
+    "performance": [
+      "animal anatomy preserved under expressive acting",
+      "eyes and attention carry misread, curiosity, recognition, and relief",
+      "species-specific body parts and body weight provide secondary motion",
+      "appealing feature-animation acting with clear silhouette, readable anticipation, squash-and-stretch restraint, and sincere reaction timing",
+      "human reaction shifts from surprise or worry to softened care",
+      "cute turn is earned by behavior and relationship, not only enlarged eyes",
+      "any imagined or heightened beat preserves identity and body logic"
+    ],
+    "platform": [
+      "16:9 source adaptable to 9:16 through stacked companion, focus detail, and human or context reaction",
+      "first frame should show behavior and emotional question",
+      "post-produce readable subtitles",
+      "continuity of character, focus detail, and space is more important than spectacle",
+      "ending should hold a changed reaction, small joke, or returned behavior with new meaning"
+    ]
+  },
+  "legal_notes": {
+    "public_sources_only": false,
+    "user_provided_local_source": true,
+    "no_identity_clone": true,
+    "no_shot_for_shot_copy": true,
+    "no_existing_ip_prompting": true
+  },
+  "usage_constraints": [
+    "Use this as a transferable craft grammar for original companion-life animated shorts, not as a request to copy any studio, film, character, exact source script, or shot sequence.",
+    "Avoid direct prompt phrases such as 'Disney style', 'Pixar style', 'Zootopia style', named characters, film titles, copied costumes, copied pet designs, copied source objects, or source-video shot-for-shot recreation.",
+    "Each new short must invent its own companion, human/context, emotional focus, setting, and turn. The references teach structure, not content.",
+    "Keep the cast small, the space geography simple, and the emotional logic visible. Do not add spectacle unless the story meaning requires it.",
+    "All readable subtitles, end cards, signs, and title text should be added in post-production rather than generated inside image or video models.",
+    "Preserve realistic pet anatomy: paws, whiskers, ears, fur clumps, eye reflections, and body weight should remain animal-specific rather than becoming human hands or plush toy limbs.",
+    "Imagined, heightened, or transformation beats are optional tools. Use them to reveal a feeling or point of view, not as default spectacle or source-video imitation."
+  ]
+}

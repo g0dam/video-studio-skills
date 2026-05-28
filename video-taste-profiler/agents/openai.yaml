@@ -1,4 +1,4 @@
 interface:
   display_name: "Video Taste Profiler"
-  short_description: "Analyze video sources into reusable director taste"
-  default_prompt: "Use $video-taste-profiler to analyze this creator or video into a reusable taste profile."
+  short_description: "Analyze video sources into full narrative, visual, edit, sound, and AI-production taste"
+  default_prompt: "Use $video-taste-profiler to analyze this creator or video into a comprehensive reusable taste profile."

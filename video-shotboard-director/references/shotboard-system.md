@@ -86,6 +86,49 @@ Each beat should include:
 
 Beat fields are a floor, not the finished description. When the local project uses paragraph-style storyboard panels, write each panel as a short cinematic paragraph after or instead of the table so the downstream render prompt can inherit concrete detail.
 
+## Master Visual Lock and State Table
+
+For any multi-panel board, write these sections before the beat descriptions.
+
+### Master Visual Lock
+
+Lock the things that should not drift:
+
+- Character identity: silhouette, face, age/body proportions, wardrobe, material, unique marks, approved reference images.
+- Hero props: exact shape, color, scale, location, state, and whether they can deform or move.
+- Location geography: fixed left/right map, foreground/midground/background, doors/windows/surfaces/landmarks, entrance and exit paths.
+- Camera and optics: axis, height, focal-length feel, depth of field, stabilization/handheld feel, framing range.
+- Light/color/material: light source direction, time of day, contrast, palette, texture rendering, surface behavior.
+- Audio identity: music cue or silence rule, ambience bed, foley palette, sound bridge strategy.
+
+### Panel State Table
+
+Use this table to prevent unrelated panels:
+
+| Panel | Start State | Delta Action Only | End State / Handoff | Camera / Focus State | Audio / Music State |
+| ---: | --- | --- | --- | --- | --- |
+
+Rules:
+
+- `Start State` inherits the previous panel's `End State / Handoff` unless a cut type declares a time jump, space jump, match cut, insert, reverse angle, or establishing reset.
+- `Delta Action Only` names only the visible change in this panel. Do not rewrite the character, room, prop, or mood from scratch with new wording.
+- `End State / Handoff` is the first-frame requirement for the next panel.
+- `Camera / Focus State` says unchanged, push/pull, pan/tilt, insert, reverse angle, focus pull, or return from cut.
+- `Audio / Music State` inherits the same cue/ambience/foley bed unless a visible action changes it.
+
+If a storyboard sheet looks like independent pretty images instead of this state chain, it should be regenerated.
+
+## Audio and Music Continuity Track
+
+Sound is part of continuity, not a separate afterthought.
+
+- Define one scene-level music or silence strategy before per-panel cues.
+- Keep tempo, instrumentation, mood, volume trend, and reverb/space consistent unless a story event changes them.
+- Assign foley to visible actions: cloth contact, footstep, door, breath, object pickup, impact, or environmental movement.
+- Use sound bridges intentionally to connect cuts.
+- For providers where audio is unreliable, keep generated video silent and put all music, ambience, foley, dialogue, and captions in post. Still write the post audio plan once so every rendered segment is edited against the same cue.
+- Do not write a different music style, instrument family, or emotional cue for every panel unless the scene is explicitly a montage with motivated music changes.
+
 Each finished panel description should answer:
 
 - What exact image is on screen?
@@ -94,6 +137,39 @@ Each finished panel description should answer:
 - What is the camera doing and how fast?
 - What sound, silence, voiceover, title card, or edit note belongs here?
 - What continuity or reveal must not be lost?
+- What start state did this panel inherit, and what exact end state must the next panel inherit?
+- What audio/music state continues through the panel?
+
+## Precision Performance Arc
+
+Use this section for close-ups, emotional reversals, interrogations, confessions, court scenes, grief scenes, vengeance turns, or any beat where the face/body performance is the main action. The goal is to make an AI-video prompt preserve controllable visible detail instead of collapsing the scene into "sad", "angry", or "crying".
+
+Build the arc as timed slices. Each slice should include:
+
+- Time range: exact start/end seconds.
+- Camera and optics: shot size, lens feel, angle, push/pull speed, focus behavior, handheld or stabilization state.
+- Light and environment: key/rim/backlight direction, color temperature shift, bokeh, dust, reflections, or other small environmental motion.
+- Control state: suppressed, involuntary tremor, spasm, dissociation, concealment, voluntary control returning, or resolved stillness.
+- Face and gaze: brow, eyelids, eye opening, blink state, gaze target, pupil focus/dilation when relevant, jaw, lips, cheek, chin, nostrils.
+- Breath and posture: inhale/exhale length, clavicle/shoulder/rib movement, neck tension, chin angle, torso curl or square-up.
+- Hands and props: finger curl, grip pressure, tremor, knuckle color, hand-to-face motion, prop contact, timing delay between hands.
+- Tears and surface detail: moisture pooling, tear release, track path, wet/dry layering, skin flush, light catching the tear line.
+- Quantifiers: use numbers for control where helpful, such as `2mm`, `0.4s delay`, `3Hz tremor`, `5 degree chin drop`, or `1.5s exhale`. Keep them tied to visible outcomes.
+- Segment handoff: what exact visible state starts the next slice.
+
+Example structure:
+
+```markdown
+## Precision Performance Arc
+
+| Time | Control State | Camera / Light | Visible Performance | Handoff |
+| --- | --- | --- | --- | --- |
+| 00:00-00:01.3 | Suppressed shock | Close-up, slow push in, cold overhead key | Chin tucked, eyes shut, jaw locked, shoulders frozen mid-exhale | Chin begins rising |
+| 00:01.3-00:02.8 | Forced ascent | Same close-up, slight crane up, background dissolves | Eyelids open in small increments, brow furrows, first moisture appears | Eyes reach full open |
+| 00:02.8-00:04.2 | Swallowing sob | Tight close-up, headroom narrows | Tear forms but holds, nostrils flare, fingers curl on armrest, throat dips once | Tear releases |
+```
+
+Use anatomical labels only when they improve control, and pair them with the visible result. `corrugator supercilii engages, carving a vertical brow furrow` is useful; a list of muscle names without screen-visible change is not.
 
 ## Scene Boundary Continuity
 
@@ -132,16 +208,41 @@ Do not create a new establishing shot at the start of each scene unless the stor
 - Props:
 - Location:
 - Light:
+- Camera / optics:
+- Color / material:
+- Audio / music:
 
 ## Scene Boundary
 
 - Entry continuity:
 - Exit handoff:
 
+## Master Visual Lock
+
+- Character identity:
+- Hero props:
+- Location geography:
+- Camera and optics:
+- Light/color/material:
+- Audio identity:
+
+## Panel State Table
+
+| Panel | Start State | Delta Action Only | End State / Handoff | Camera / Focus State | Audio / Music State |
+| ---: | --- | --- | --- | --- | --- |
+
 ## Beats
 
 | Beat | Timecode | Cut Type | Shot | Action | Camera | Viewer Attention | Continuity | Render Risk |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+## Audio and Music Continuity Track
+
+- Music/silence strategy:
+- Ambience bed:
+- Foley palette:
+- Sound bridges:
+- Entry/exit cue points:
 
 ## Director Notes
 
@@ -176,6 +277,8 @@ If the project uses `storyboard/scene-XX.png`, write the prompt in the same styl
 - The script language should match the user's language unless requested otherwise.
 - The timing in the script must add up exactly to the scene duration.
 - The script must be detailed enough to become a provider prompt without guessing. Avoid generic shot labels; include scene geography, character identity, exact action chain, camera rhythm, sound design, and negative constraints.
+- The script must include the master visual lock, panel state table, and audio/music continuity track. Per-panel descriptions should inherit prior state and describe only the next visible change.
+- If a precision performance arc exists, carry its time slices into the script. Preserve the visible physiology, timing measurements, camera/focus behavior, light changes, and control-state handoffs.
 
 ## Motion Notes
 

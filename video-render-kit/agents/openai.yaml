@@ -1,4 +1,4 @@
 interface:
   display_name: "Video Render Kit"
-  short_description: "Adapt boards into provider prompts and post-audio notes"
-  default_prompt: "Use $video-render-kit to convert this shotboard into provider-ready video prompts, with render segmentation, storyboard-grid warnings, silent-video/audio-post policy, and provider ratio normalization."
+  short_description: "Provider prompts with visual locks, segment handoffs, and audio continuity"
+  default_prompt: "Use $video-render-kit to convert this shotboard into provider-ready video prompts with master visual locks, segment state handoffs, unified audio/music continuity, render segmentation, precision performance micro-beats, silent-video/audio-post policy, and provider ratio normalization."

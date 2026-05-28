@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "slug": "family-musical-fairytale-adventure",
+  "title": "Family Musical Fairytale Adventure",
+  "source_type": "mixed",
+  "source_refs": [
+    {
+      "id": "S01",
+      "type": "official-process",
+      "url": "https://www.disneyanimation.com/process/visual-development/",
+      "description": "Disney Animation process page on visual development, appeal, color, design, composition, and emotion-focused moments."
+    },
+    {
+      "id": "S02",
+      "type": "official-process",
+      "url": "https://www.disneyanimation.com/process/story/",
+      "description": "Disney Animation process page on storyboarding, expression, timing, staging, framing, and story as film foundation."
+    },
+    {
+      "id": "S03",
+      "type": "official-process",
+      "url": "https://www.disneyanimation.com/process/animation/",
+      "description": "Disney Animation process page on timing, clear staging, squash and stretch, anticipation, follow-through, secondary action, anatomy, weight, movement, and appeal."
+    },
+    {
+      "id": "S04",
+      "type": "official-process",
+      "url": "https://www.disneyanimation.com/process/layout/",
+      "description": "Disney Animation process page on staging, blocking, camera, composition, point of view, shot clarity, and continuity."
+    },
+    {
+      "id": "S05",
+      "type": "official-process",
+      "url": "https://www.disneyanimation.com/process/lighting/",
+      "description": "Disney Animation process page on lighting, color, contrast, mood shifts, and guiding the audience's eye."
+    },
+    {
+      "id": "S06",
+      "type": "official-process",
+      "url": "https://www.disneyanimation.com/process/look-development/",
+      "description": "Disney Animation process page on color, texture, materials, hair, clothing details, and iteration."
+    },
+    {
+      "id": "S07",
+      "type": "official-news",
+      "url": "https://news.disney.com/introducing-encanto",
+      "description": "Disney News article on Encanto's family theme, magical realism, research, cultural consultation, and character-costume relationship."
+    },
+    {
+      "id": "S08",
+      "type": "official-news",
+      "url": "https://news.disney.com/encanto-behind-the-scenes",
+      "description": "Disney News behind-the-scenes article on musical storytelling, family dynamics, research, cultural trust, architecture, biodiversity, and song range."
+    },
+    {
+      "id": "S09",
+      "type": "official-news",
+      "url": "https://news.disney.com/encanto-choreography",
+      "description": "Disney News article on choreography, music-led movement, animated performance detail, and character-specific motion."
+    },
+    {
+      "id": "S10",
+      "type": "official-company-news",
+      "url": "https://thewaltdisneycompany.com/news/behind-the-music-of-disney-animations-wish-with-julia-michaels-and-benjamin-rice/",
+      "description": "The Walt Disney Company article on Wish music, original story and characters, musical legacy, and songs built alongside story and animation."
+    }
+  ],
+  "created_at": "2026-05-24T05:19:33+00:00",
+  "updated_at": "2026-05-24T05:32:00+00:00",
+  "aspect_ratios": [
+    "9:16",
+    "16:9",
+    "1.85:1",
+    "2.39:1"
+  ],
+  "duration_range_sec": {
+    "min": 15,
+    "max": 120
+  },
+  "confidence": "medium",
+  "style_vectors": {
+    "narrative": [
+      "emotion-first fairytale premise",
+      "ordinary outsider with an inner gift",
+      "family or community wound as the central conflict",
+      "magical realism tied to character need",
+      "clear want-versus-duty structure",
+      "visual payoff through belonging, courage, or repair"
+    ],
+    "camera": [
+      "clear staging and readable silhouettes",
+      "expressive theatrical blocking",
+      "camera movement motivated by emotion",
+      "push-in at realization",
+      "wide establishing world reveal",
+      "object inserts for charms, maps, doors, instruments, and keepsakes"
+    ],
+    "editing": [
+      "storyboard-led clarity",
+      "song or rhythm-driven montage",
+      "reaction beats after magical reveals",
+      "match cuts through color, gesture, or prop movement",
+      "breath pause before emotional confession"
+    ],
+    "color_light": [
+      "appealing saturated color shaped by story mood",
+      "warm home or community light",
+      "cool doubt or isolation palette",
+      "glowing magical accents",
+      "color keys that guide emotion and eye path",
+      "textured materials with tactile craft detail"
+    ],
+    "sound": [
+      "songs advance character and world rules",
+      "melody tied to protagonist desire",
+      "environmental sound as magic cue",
+      "percussive movement beats",
+      "brief silence before a heartfelt line"
+    ],
+    "performance": [
+      "appeal-driven expressive face",
+      "specific gesture acting",
+      "anticipation before action",
+      "follow-through and secondary motion",
+      "dance or rhythmic body language",
+      "big emotion kept legible for family audiences"
+    ],
+    "platform": [
+      "9:16 adaptation needs strong first-frame silhouette",
+      "shorts should open with want, obstacle, and magical promise",
+      "avoid relying on generated readable lyrics",
+      "turn songs into visual rhythm and post-production audio notes",
+      "ending should resolve emotion while leaving a wonder image"
+    ]
+  },
+  "legal_notes": {
+    "public_sources_only": true,
+    "no_identity_clone": true,
+    "no_shot_for_shot_copy": true
+  },
+  "usage_constraints": [
+    "Use as a broad family animated musical adventure grammar, not as a request to imitate Walt Disney Animation Studios, Pixar, a specific film, a named character, or a proprietary design language.",
+    "Create original characters, worlds, props, songs, symbols, and costumes. Do not use princess names, Mickey-shaped symbols, film-specific outfits, castles, mascots, sidekicks, logos, or copyrighted character silhouettes.",
+    "For image generation, prompt for storybook musical animation, theatrical clarity, expressive appeal, warm magical realism, and tactile craft detail rather than saying 'Disney style'.",
+    "Keep generated text, lyrics, signage, and UI out of the image. Place precise captions, lyrics, and dialogue in post-production.",
+    "Use cultural research for any real-world setting; do not mix ceremonial clothing, architecture, or symbols casually just because they look magical."
+  ]
+}

@@ -1,4 +1,4 @@
 interface:
   display_name: "Video Shotboard Director"
-  short_description: "Design timed shotboards, vertical boards, and cut logic"
-  default_prompt: "Use $video-shotboard-director to create a timed shotboard, matching storyboard image/keyframes, cut-motivation notes, and motion-ready prompt for this scene while following the project's path and aspect-ratio convention."
+  short_description: "Timed boards with visual locks, state handoffs, and audio continuity"
+  default_prompt: "Use $video-shotboard-director to create a timed shotboard with master visual locks, panel state handoffs, cut logic, unified audio/music continuity, image/keyframe prompts, and precision emotion micro-beats for this scene."

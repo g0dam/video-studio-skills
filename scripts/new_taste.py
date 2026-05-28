@@ -13,6 +13,23 @@ from pathlib import Path
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 SOURCE_TYPES = ["creator", "account", "single-video", "local-video", "mixed", "original"]
 CONFIDENCE = ["low", "medium", "high"]
+ANALYSIS_DIMENSIONS = [
+    "narrative_structure",
+    "scene_world",
+    "mise_en_scene",
+    "character_performance",
+    "shot_size",
+    "camera_angle_position",
+    "camera_movement",
+    "composition_visual_design",
+    "optics_texture",
+    "lighting",
+    "color_art_direction",
+    "editing_rhythm",
+    "transitions_graphic_links",
+    "sound_music",
+    "platform_ai_production",
+]
 
 
 def utc_now() -> str:
@@ -55,10 +72,15 @@ def build_manifest(args: argparse.Namespace) -> dict:
             "performance": [],
             "platform": [],
         },
+        "analysis_dimensions": {key: [] for key in ANALYSIS_DIMENSIONS},
         "legal_notes": {
             "public_sources_only": True,
             "no_identity_clone": True,
             "no_shot_for_shot_copy": True,
+            "no_specific_plot_copy": True,
+            "no_protected_design_clone": True,
+            "no_voice_or_music_clone": True,
+            "source_inventory_in_source_log_only": True,
         },
         "usage_constraints": [],
     }
@@ -75,53 +97,165 @@ TODO: Summarize the transferable creative grammar in one paragraph.
 
 - TODO
 
-## Narrative Grammar
+## Director Section Contract
+
+For each director section below, fill the reusable taste rather than source inventory:
+
+- Observed evidence summary:
+- Abstract pattern:
+- Viewer effect:
+- Reusable production rule:
+- Copy-risk boundary:
+- Evidence confidence:
+
+## Generalization Gate
+
+- Source inventory kept in source-log:
+- Transferable craft functions:
+- New-work substitution rule:
+- Copy-risk boundary:
+- Evidence confidence:
+
+## Narrative and Structure
 
 - Hook:
 - Build:
 - Turn:
 - Payoff:
 - Common motifs:
+- Information reveal order:
+- Ending aftertaste:
 
-## Visual Grammar
+## Scene and World
 
-- Composition:
-- Lens and shot size:
-- Camera movement:
-- Blocking:
-- Texture and materials:
+- Era and location:
+- Social class and cultural signals:
+- Space scale and geography:
+- Weather and season:
+- Realism versus stylization:
+- Prop system and set density:
+- Movement path and spatial pressure:
 
-## Edit Rhythm
+## Mise-en-scene
 
-- Cut density:
-- Transition logic:
-- Silence or pause rules:
+- Staging:
+- Foreground/midground/background:
+- Prop placement and visual center:
+- Occlusion and depth:
+- Symmetry/asymmetry:
+- Object metaphor:
+- Environmental storytelling:
 
-## Color, Light, and Sound
+## Character and Performance
 
-- Palette:
-- Light sources:
-- Music:
-- Natural sound:
-- Voice:
-
-## Performance Direction
-
-- Gesture scale:
-- Eye behavior:
+- Role identity and status:
 - Emotional temperature:
+- Face and eye behavior:
+- Posture, gait, gesture, breath:
+- Dialogue and subtext:
+- Distance, power, and intimacy:
+- Restraint versus exaggeration:
 
-## Platform Behavior
+## Shot Size
 
-- Aspect ratios:
+- Dominant shot distances:
+- Inserts and details:
+- Reaction shots:
+- Establishing or empty shots:
+
+## Camera Angle and Position
+
+- Angle habits:
+- Subjective/objective viewpoint:
+- Obstructed, mirror, surveillance, or voyeur positions:
+- Power relation created by camera height:
+
+## Camera Movement
+
+- Movement types:
+- Movement motivation:
+- Handheld/mechanical/breathing feel:
+- Focus movement:
+
+## Composition and Visual Design
+
+- Aspect ratio and safe area:
+- Subject placement:
+- Symmetry, negative space, leading lines:
+- Depth layers and foreground:
+- Shape language and visual tension:
+
+## Optics and Image Texture
+
+- Focal length feel:
+- Depth of field:
+- Exposure and shutter feel:
+- Grain, sharpness, haze, flare, dirt:
+- Film/digital/documentary/commercial feel:
+
+## Lighting
+
+- Motivated sources:
+- Key/fill/rim/eye light:
+- Hard/soft, high-key/low-key:
+- Shadow shape:
+- Color temperature and moving light:
+
+## Color and Art Direction
+
+- Main/support/accent colors:
+- Warm/cool, saturation, brightness, contrast:
+- Skin tone behavior:
+- Color symbolism:
+- Character/location color rules:
+- Color shift across the piece:
+
+## Editing and Rhythm
+
+- Shot length:
+- Cut frequency:
+- Match logic and continuity:
+- Montage, jump cut, cross-cutting, repetition:
+- Pause, acceleration, release:
+
+## Transitions and Graphic Links
+
+- Transition types:
+- Graphic or action matches:
+- Sound lead-in or continuation:
+- Time/space/emotion transition logic:
+
+## Sound and Music
+
+- Dialogue:
+- Ambience:
+- Foley and effects:
+- Music role and motif:
+- Silence:
+- Diegetic/non-diegetic behavior:
+- Sound bridge:
+- Mix, reverb, spatiality:
+
+## Platform and AI Production Behavior
+
 - First-frame rule:
 - Caption/subtitle behavior:
-- Loop or ending behavior:
+- Cover or thumbnail moment:
+- Loop behavior:
+- Sound-on/sound-off assumptions:
+- Render risks:
+- Image-generation opportunities:
 
 ## Prompt Implications
 
 - Use:
 - Avoid:
+- Substitution rules:
+- Story planning implications:
+- Asset and continuity locks:
+- Camera/render prompt locks:
+- Sound/edit prompt locks:
+- Anti-copy constraints:
 - Render risks:
 
 ## Confidence and Gaps
@@ -149,7 +283,16 @@ def source_log_template(title: str, source_type: str) -> str:
 
 ## Observations
 
+### Dimension Evidence Matrix
+
+| Dimension | Observed Evidence | Inferred Pattern | Reusable Rule Candidate | Copy-Risk Redline | Confidence |
+| --- | --- | --- | --- | --- | --- |
+
 ### Repeated Patterns
+
+- TODO
+
+### Source Inventory Kept Out of Taste
 
 - TODO
 
@@ -171,9 +314,13 @@ def prompt_vocabulary_template(title: str) -> str:
 - camera:
 - motion:
 - color:
+- lighting:
+- composition:
+- optics:
 - texture:
 - sound:
 - editing:
+- transition:
 - performance:
 
 ## Negative Vocabulary
@@ -183,7 +330,15 @@ def prompt_vocabulary_template(title: str) -> str:
 
 ## Reusable Prompt Blocks
 
+### Story Lock
+
+TODO
+
 ### Visual Lock
+
+TODO
+
+### Camera and Edit Lock
 
 TODO
 
@@ -192,6 +347,14 @@ TODO
 TODO
 
 ### Continuity Lock
+
+TODO
+
+### Sound and Edit Lock
+
+TODO
+
+### Anti-Copy Lock
 
 TODO
 """
