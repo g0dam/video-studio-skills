@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "slug": "pangju-cozy-kitchen-companion",
+  "title": "Pangju Cozy Kitchen Companion",
+  "source_type": "original",
+  "source_refs": [
+    "../../../characters/pangju.md",
+    "../../../characters/pangju.png"
+  ],
+  "created_at": "2026-05-27T23:43:21+00:00",
+  "updated_at": "2026-05-27T23:43:29Z",
+  "aspect_ratios": [
+    "9:16"
+  ],
+  "duration_range_sec": {
+    "min": 20,
+    "max": 35
+  },
+  "confidence": "medium",
+  "style_vectors": {
+    "narrative": [
+      "tiny companion performs a human-scale care ritual",
+      "comedy procedure turns into a quiet emotional reveal",
+      "one ordinary meal or object changes a human day"
+    ],
+    "camera": [
+      "cat-height viewpoint",
+      "tactile insert shots for paws, bowl, spoon, steam, cloth",
+      "storybook doorway and table-edge framing to preserve small-body scale"
+    ],
+    "editing": [
+      "first-frame behavior hook",
+      "4-6 compact scenes in 20-35 seconds",
+      "short comedy escalation followed by a held recognition beat"
+    ],
+    "color_light": [
+      "golden kitchen practicals against lavender-blue dawn shadows",
+      "cream, orange, honey wood, enamel blue, soft teal-gray, and rose-gold highlights",
+      "soft magical-feeling motivated glow at the emotional payoff, without literal magic"
+    ],
+    "sound": [
+      "post-produced soft kitchen foley",
+      "restrained family-comedy music",
+      "sparse Chinese voiceover and captions added in editing only"
+    ],
+    "performance": [
+      "species-specific cat body logic",
+      "round expressive eyes, ear and tail acting",
+      "small mistakes preserve cuteness and dignity"
+    ],
+    "platform": [
+      "9:16 vertical social short",
+      "AI disclosure and captions handled in post",
+      "ending asks comments to choose the next human task"
+    ]
+  },
+  "analysis_dimensions": {
+    "narrative_structure": [
+      "hook with abnormal pet behavior, build through a concrete care procedure, turn reveals who the care is for, aftertaste lands on a small changed human reaction"
+    ],
+    "scene_world": [
+      "stylized contemporary Chinese storybook neighborhood spaces: rounded corridor, cozy kitchen, toy-like market stall, noodle counter, rainy alley, clinic entrance"
+    ],
+    "mise_en_scene": [
+      "small kitchen tools scaled to the cat, rounded hand-crafted set pieces, warm practical light, soft cloth and honey wood, props placed low enough for cat interaction"
+    ],
+    "character_performance": [
+      "cat remains mostly cat-like; emotion reads through eyes, ears, tail, belly weight, paw hesitation, and careful object pushing"
+    ],
+    "shot_size": [
+      "close face acting, tactile prop inserts, medium kitchen procedure shots, doorframe payoff composition"
+    ],
+    "camera_angle_position": [
+      "low cat-height, tabletop edge, floor-level tracking, doorway peeking, stove-side safe angle"
+    ],
+    "camera_movement": [
+      "gentle push-in, small follow, attention-led tilts to objects, stillness during recognition"
+    ],
+    "composition_visual_design": [
+      "vertical stack keeps cat, prop, and human consequence readable; foreground occlusion makes the cat feel small"
+    ],
+    "optics_texture": [
+      "premium stylized animated 3D with tactile fur, cotton-linen apron, enamel, soft steam curls, rounded honey wood, painterly shallow depth"
+    ],
+    "lighting": [
+      "motivated kitchen lamp or market morning light; warm subject light balanced by cool hallway or rain base"
+    ],
+    "color_art_direction": [
+      "warm orange cat is the anchor; cream apron, honey wood, lavender-blue dawn shadows, teal-gray walls, tiny blue enamel accent"
+    ],
+    "editing_rhythm": [
+      "fast hook, compact procedure, one comic stumble, then a slower emotional hold"
+    ],
+    "transitions_graphic_links": [
+      "cut by object continuity: basket to ingredient, spoon to bowl, bowl to human reaction, paw to final expression"
+    ],
+    "sound_music": [
+      "room tone, paw steps, basket rustle, spoon-bowl clink, steam, rain, soft piano or plucked strings; no provider-generated dialogue"
+    ],
+    "platform_ai_production": [
+      "avoid generated readable text, logos, signs, human hands on the cat, species drift, chef-hat drift, over-humanized walking"
+    ]
+  },
+  "legal_notes": {
+    "public_sources_only": true,
+    "no_identity_clone": true,
+    "no_shot_for_shot_copy": true,
+    "no_specific_plot_copy": true,
+    "no_protected_design_clone": true,
+    "no_voice_or_music_clone": true,
+    "source_inventory_in_source_log_only": true
+  },
+  "usage_constraints": [
+    "Downstream prompts may use classic family animated feature taste, storybook warmth, rounded appeal, and expressive character acting, but must not request exact Disney, Pixar, Garfield, Puss in Boots, or any named IP style.",
+    "Do not make Pangju speak human dialogue or become a full humanoid cat.",
+    "Keep all captions, AI labels, market signs, prices, and comment hooks out of generated frames and add them in post.",
+    "Preserve Pangju's approved reference image and continuity locks unless the user explicitly approves a redesign."
+  ]
+}
